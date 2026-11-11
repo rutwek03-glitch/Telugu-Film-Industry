@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TFI Cinematic Archives | Tollywood Superstars & Movies</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Animated Intro Splash Screen -->
+  <div id="intro-splash" class="splash-screen">
+    <div class="splash-content">
+      <div class="glow-orb"></div>
+      <span class="badge-gold"><i class="fa-solid fa-film"></i> TELUGU CINEMA ARCHIVES</span>
+      <h1 class="splash-title">TFI SUPERSTARS & BOX OFFICE</h1>
+      <p class="splash-subtitle">Explore Box Office History, Hero Profiles, Directors & Worldwide Collections</p>
+      <button id="enter-btn" class="glow-btn"><i class="fa-solid fa-play"></i> ENTER ARCHIVE</button>
+    </div>
+  </div>
+
+  <!-- Main Header Navigation -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand">
+        <i class="fa-solid fa-clapperboard brand-icon"></i>
+        <div>
+          <h2>TFI ARCHIVES</h2>
+          <span class="brand-sub">Tollywood Cinema Intelligence</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#heroes-section"><i class="fa-solid fa-user-ninja"></i> Heroes</a>
+        <a href="#movies-section"><i class="fa-solid fa-table"></i> Movies Database</a>
+        <a href="#compare-section"><i class="fa-solid fa-code-compare"></i> Battle Matrix</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    
+    <!-- Hero Superstars Showcase Block -->
+    <section id="heroes-section" class="section-container">
+      <div class="section-header">
+        <h2><i class="fa-solid fa-crown text-gold"></i> Tollywood Superstars</h2>
+        <p>Click on any hero profile to view top movies, career stats, and grossing records.</p>
+      </div>
+      <div id="heroes-grid" class="heroes-grid">
+        <!-- Dynamic Hero Cards Rendered via JavaScript -->
+      </div>
+    </section>
+
+    <!-- Master Movie Database Table & Filter Control Block -->
+    <section id="movies-section" class="section-container">
+      <div class="section-header">
+        <h2><i class="fa-solid fa-film text-gold"></i> Master Filmography & Collections</h2>
+        <p>Search, filter, and sort movies by release year, director, worldwide gross, and verdict.</p>
+      </div>
+
+      <!-- Controls Toolbar -->
+      <div class="controls-card">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="search-input" placeholder="Search by movie title or director..." />
+        </div>
+        <div class="filter-group">
+          <select id="hero-filter">
+            <option value="ALL">All Heroes</option>
+          </select>
+          <select id="verdict-filter">
+            <option value="ALL">All Verdicts</option>
+            <option value="Industry Hit">Industry Hit</option>
+            <option value="All-Time Blockbuster">All-Time Blockbuster</option>
+            <option value="Blockbuster">Blockbuster</option>
+            <option value="Super Hit">Super Hit</option>
+            <option value="Hit">Hit</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Data Table -->
+      <div class="table-responsive">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th data-sort="title">Movie Title <i class="fa-solid fa-sort"></i></th>
+              <th data-sort="hero">Hero <i class="fa-solid fa-sort"></i></th>
+              <th data-sort="director">Director <i class="fa-solid fa-sort"></i></th>
+              <th data-sort="year">Year <i class="fa-solid fa-sort"></i></th>
+              <th data-sort="gross">Worldwide Gross (₹ Cr) <i class="fa-solid fa-sort"></i></th>
+              <th data-sort="verdict">Box Office Verdict <i class="fa-solid fa-sort"></i></th>
+            </tr>
+          </thead>
+          <tbody id="movies-tbody">
+            <!-- Dynamic Table Rows Rendered via JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Head-to-Head Comparison Battle Matrix -->
+    <section id="compare-section" class="section-container">
+      <div class="section-header">
+        <h2><i class="fa-solid fa-shield-halved text-gold"></i> Head-to-Head Hero Comparison</h2>
+        <p>Select two heroes to compare career numbers and top box office achievements side-by-side.</p>
+      </div>
+
+      <div class="compare-selector-bar">
+        <select id="hero-1-select" class="compare-select"></select>
+        <span class="vs-badge">VS</span>
+        <select id="hero-2-select" class="compare-select"></select>
+      </div>
+
+      <div id="compare-grid" class="compare-grid">
+        <!-- Rendered Side-by-Side Comparison Matrix -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Popup for Hero Details -->
+  <div id="hero-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button id="modal-close" class="modal-close-btn">&times;</button>
+      <div id="modal-body">
+        <!-- Dynamic Content injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
