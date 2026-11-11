@@ -14,7 +14,7 @@ const tfiData2 = {
       era: "Pioneer Era (1940s-1970s)",
       debut: "Mana Desam (1949)",
       totalGross: "Historical Benchmark (300+ Films)",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=80",
+      image: "images/sr_ntr.jpg",
       bio: "Legendary actor, filmmaker, and former Chief Minister of AP. Immortalized for portrayal of Lord Krishna and Lord Rama in classics like Mayabazar, Lava Kusa, and Daana Veera Soora Karna."
     },
     {
@@ -28,7 +28,7 @@ const tfiData2 = {
       era: "Pioneer Era (1940s-1970s)",
       debut: "Dharmapatni (1941)",
       totalGross: "Historical Benchmark (255+ Films)",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=80",
+      image: "images/anr.jpg",
       bio: "Doyen of Telugu cinema and founder of Annapurna Studios. Renowned for emotional depth in tragedy and romantic classics like Devadasu, Prem Nagar, Meghasandesam, and Manam."
     },
     {
@@ -42,7 +42,7 @@ const tfiData2 = {
       era: "Pioneer Era (1940s-1970s)",
       debut: "Thene Manasulu (1965)",
       totalGross: "Historical Benchmark (350+ Films)",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=80",
+      image: "images/krishna.jpg",
       bio: "Trailblazer who introduced spy films (Gudachari 116), Cinemascope, 70mm stereophonic sound, and DTS to Telugu cinema. Starred in landmark hits like Alluri Seetarama Raju."
     },
     {
@@ -56,7 +56,7 @@ const tfiData2 = {
       era: "Pioneer Era (1940s-1970s)",
       debut: "Daiva Balam (1959)",
       totalGross: "Historical Benchmark (230+ Films)",
-      image: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=500&auto=format&fit=crop&q=80",
+      image: "images/sobhan_babu.jpg",
       bio: "Icon of family dramas and romantic cinema in the 1970s and 1980s. Four-time Filmfare Best Actor winner for films like Soggadu, Jeevana Jyothi, and Karthika Deepam."
     },
 
@@ -72,7 +72,7 @@ const tfiData2 = {
       era: "Golden Era (1980s-1990s)",
       debut: "Pranam Khareedu (1978)",
       totalGross: "2,250 Cr+ (Cumulative)",
-      image: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=500&auto=format&fit=crop&q=80",
+      image: "images/chiranjeevi.jpg",
       bio: "Undisputed king of box office openings and mass craze for four decades. Revolutionized dance break-stepping, screen fights, and commercial cinema boundaries (Khaidi, Gang Leader, Indra, Waltair Veerayya)."
     },
     {
@@ -86,7 +86,7 @@ const tfiData2 = {
       era: "Golden Era (1980s-1990s)",
       debut: "Tatamma Kala (1974)",
       totalGross: "1,450 Cr+ (Cumulative)",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80",
+      image: "images/balakrishna.jpg",
       bio: "Powerhouse of high-octane dialogue delivery and legendary faction-action blockbusters. Known for industry hits like Samarasimha Reddy, Narasimha Naidu, Legend, and Akhanda."
     },
     {
@@ -100,7 +100,7 @@ const tfiData2 = {
       era: "Golden Era (1980s-1990s)",
       debut: "Kaliyuga Pandavulu (1986)",
       totalGross: "1,200 Cr+ (Cumulative)",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=80",
+      image: "images/venkatesh.jpg",
       bio: "Master of high hit-ratio box office consistency and family entertainers. Winner of 7 State Nandi Awards for Best Actor for films like Chanti, Preminchukundam Raa, Nuvvu Naaku Nachav, and Drushyam."
     },
     {
@@ -114,7 +114,7 @@ const tfiData2 = {
       era: "Golden Era (1980s-1990s)",
       debut: "Vikram (1986)",
       totalGross: "1,150 Cr+ (Cumulative)",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&auto=format&fit=crop&q=80",
+      image: "images/nagarjuna.jpg",
       bio: "Trendsetter who introduced technical modernizations with Ram Gopal Varma's Shiva. Celebrated for devotional classics (Annamayya, Sri Ramadasu) and blockbuster entertainers (Manam, Soggade Chinni Nayana)."
     },
 
@@ -126,7 +126,7 @@ const tfiData2 = {
       title: "Rebel Star / Pan-India Superstar",
       dob: "23 October 1979",
       birthPlace: "Chennai, Tamil Nadu",
-      dynasty: "Uppalapati Family (Krishnam Raju Nephew)",
+      dynasty: "Uppalapati Family",
       era: "Pan-India & Modern Era (2000s-Present)",
       debut: "Eeswar (2002)",
       totalGross: "5,400 Cr+ (Sacnilk Tracked)",
@@ -204,20 +204,6 @@ const tfiData2 = {
       bio: "Master of dialogue delivery, emotional versatility, and mass screen dominance. Achieved global acclaim with RRR, Simhadri, Yamadonga, Temper, and Devara: Part 1."
     },
     {
-      id: "ravi_teja",
-      name: "Mass Maharaja Ravi Teja",
-      realName: "Bhupatiraju Ravi Shankar Raju",
-      title: "Mass Maharaja",
-      dob: "26 January 1968",
-      birthPlace: "Jaggampeta, East Godavari, AP",
-      dynasty: "Self-Made Icon",
-      era: "Pan-India & Modern Era (2000s-Present)",
-      debut: "Kartavyam (1990) / Nee Sneham",
-      totalGross: "1,100 Cr+ (Sacnilk Tracked)",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=80",
-      bio: "Self-made mass superstar known for boundless screen energy, comedy timing, and raw action hits like Idiot, Vikramarkudu, Kick, and Dhamaka."
-    },
-    {
       id: "nani",
       name: "Natural Star Nani",
       realName: "Ghanta Naveen Babu",
@@ -230,74 +216,31 @@ const tfiData2 = {
       totalGross: "1,250 Cr+ (Sacnilk Tracked)",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&auto=format&fit=crop&q=80",
       bio: "One of Tollywood's most consistent and versatile self-made stars. Delivered acclaimed hits like Eega, Bhale Bhale Magadivoy, Jersey, Dasara, and Saripodhaa Sanivaram."
-    },
-    {
-      id: "vijay_d",
-      name: "Vijay Deverakonda",
-      realName: "Deverakonda Vijay Sai",
-      title: "Rowdy Star",
-      dob: "9 May 1989",
-      birthPlace: "Hyderabad, Telangana",
-      dynasty: "Self-Made Icon",
-      era: "Pan-India & Modern Era (2000s-Present)",
-      debut: "Nuvvila (2011)",
-      totalGross: "650 Cr+ (Sacnilk Tracked)",
-      image: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=500&auto=format&fit=crop&q=80",
-      bio: "Youth sensation who shot to pan-Indian fame with Arjun Reddy, Pelli Choopulu, and Geetha Govindam."
     }
   ],
 
-  // --- FILMOGRAPHY DATABASE (REFERENCING SACNILK & IMDB WORLDWIDE GROSS NUMBERS) ---
   movies: [
-    // Prabhas
-    { title: "Baahubali 2: The Conclusion", hero: "Prabhas", director: "S. S. Rajamouli", year: 2017, gross: 1810.6, imdbRating: 8.2, sacnilkStatus: "Verified", verdict: "Industry Hit" },
-    { title: "Pushpa 2: The Rule", hero: "Allu Arjun", director: "Sukumar", year: 2024, gross: 1742.1, imdbRating: 8.0, sacnilkStatus: "Verified", verdict: "All-Time Blockbuster" },
-    { title: "RRR", hero: "Ram Charan", director: "S. S. Rajamouli", year: 2022, gross: 1387.0, imdbRating: 7.8, sacnilkStatus: "Verified", verdict: "Industry Hit" },
-    { title: "Kalki 2898 AD", hero: "Prabhas", director: "Nag Ashwin", year: 2024, gross: 1042.2, imdbRating: 7.6, sacnilkStatus: "Verified", verdict: "All-Time Blockbuster" },
-    { title: "Salaar: Part 1 - Ceasefire", hero: "Prabhas", director: "Prashanth Neel", year: 2023, gross: 715.0, imdbRating: 6.6, sacnilkStatus: "Verified", verdict: "Blockbuster" },
-    { title: "Baahubali: The Beginning", hero: "Prabhas", director: "S. S. Rajamouli", year: 2015, gross: 650.0, imdbRating: 8.0, sacnilkStatus: "Verified", verdict: "Industry Hit" },
-    { title: "Devara: Part 1", hero: "Jr NTR", director: "Koratala Siva", year: 2024, gross: 521.0, imdbRating: 6.4, sacnilkStatus: "Verified", verdict: "Blockbuster" },
-    { title: "Saaho", hero: "Prabhas", director: "Sujeeth", year: 2019, gross: 439.0, imdbRating: 5.6, sacnilkStatus: "Verified", verdict: "Hit" },
-    { title: "Pushpa: The Rise", hero: "Allu Arjun", director: "Sukumar", year: 2021, gross: 393.5, imdbRating: 7.6, sacnilkStatus: "Verified", verdict: "Blockbuster" },
-
-    // Mahesh Babu
-    { title: "Sarileru Neekevvaru", hero: "Superstar Mahesh Babu", director: "Anil Ravipudi", year: 2020, gross: 260.0, imdbRating: 6.1, sacnilkStatus: "Verified", verdict: "Blockbuster" },
-    { title: "Guntur Kaaram", hero: "Superstar Mahesh Babu", director: "Trivikram Srinivas", year: 2024, gross: 231.0, imdbRating: 5.8, sacnilkStatus: "Verified", verdict: "Hit" },
-    { title: "Sarkaru Vaari Paata", hero: "Superstar Mahesh Babu", director: "Parasuram", year: 2022, gross: 230.0, imdbRating: 5.7, sacnilkStatus: "Verified", verdict: "Hit" },
-    { title: "Bharat Ane Nenu", hero: "Superstar Mahesh Babu", director: "Koratala Siva", year: 2018, gross: 225.0, imdbRating: 7.6, sacnilkStatus: "Verified", verdict: "Super Hit" },
-    { title: "Maharshi", hero: "Superstar Mahesh Babu", director: "Vamshi Paidipally", year: 2019, gross: 200.0, imdbRating: 7.2, sacnilkStatus: "Verified", verdict: "Super Hit" },
-    { title: "Srimanthudu", hero: "Superstar Mahesh Babu", director: "Koratala Siva", year: 2015, gross: 200.0, imdbRating: 7.5, sacnilkStatus: "Verified", verdict: "Industry Hit" },
-    { title: "Dookudu", hero: "Superstar Mahesh Babu", director: "Srinu Vaitla", year: 2011, gross: 101.0, imdbRating: 7.4, sacnilkStatus: "Verified", verdict: "Industry Hit" },
-    { title: "Pokiri", hero: "Superstar Mahesh Babu", director: "Puri Jagannadh", year: 2006, gross: 66.0, imdbRating: 8.0, sacnilkStatus: "Verified", verdict: "Industry Hit" },
-
-    // Chiranjeevi & Balakrishna
-    { title: "Waltair Veerayya", hero: "Megastar Chiranjeevi", director: "K. S. Ravindra", year: 2023, gross: 236.1, imdbRating: 6.2, sacnilkStatus: "Verified", verdict: "Blockbuster" },
-    { title: "Sye Raa Narasimha Reddy", hero: "Megastar Chiranjeevi", director: "Surender Reddy", year: 2019, gross: 240.0, imdbRating: 7.3, sacnilkStatus: "Verified", verdict: "Super Hit" },
-    { title: "Khaidi No. 150", hero: "Megastar Chiranjeevi", director: "V. V. Vinayak", year: 2017, gross: 164.0, imdbRating: 6.1, sacnilkStatus: "Verified", verdict: "Blockbuster" },
-    { title: "Indra", hero: "Megastar Chiranjeevi", director: "B. Gopal", year: 2002, gross: 55.0, imdbRating: 7.4, sacnilkStatus: "Verified", verdict: "Industry Hit" },
-    { title: "Akhanda", hero: "Nandamuri Balakrishna", director: "Boyapati Srinu", year: 2021, gross: 151.0, imdbRating: 7.0, sacnilkStatus: "Verified", verdict: "Blockbuster" },
-    { title: "Bhagavanth Kesari", hero: "Nandamuri Balakrishna", director: "Anil Ravipudi", year: 2023, gross: 138.0, imdbRating: 6.7, sacnilkStatus: "Verified", verdict: "Super Hit" },
-    { title: "Veera Simha Reddy", hero: "Nandamuri Balakrishna", director: "Gopichand Malineni", year: 2023, gross: 134.0, imdbRating: 5.3, sacnilkStatus: "Verified", verdict: "Hit" },
-    { title: "Narasimha Naidu", hero: "Nandamuri Balakrishna", director: "B. Gopal", year: 2001, gross: 30.0, imdbRating: 7.1, sacnilkStatus: "Verified", verdict: "Industry Hit" },
-
-    // Pawan Kalyan & Ram Charan & Jr NTR
-    { title: "Attarintiki Daredi", hero: "Power Star Pawan Kalyan", director: "Trivikram Srinivas", year: 2013, gross: 187.0, imdbRating: 7.3, sacnilkStatus: "Verified", verdict: "Industry Hit" },
-    { title: "Bheemla Nayak", hero: "Power Star Pawan Kalyan", director: "Saagar K Chandra", year: 2022, gross: 193.0, imdbRating: 6.5, sacnilkStatus: "Verified", verdict: "Super Hit" },
-    { title: "Gabbar Singh", hero: "Power Star Pawan Kalyan", director: "Harish Shankar", year: 2012, gross: 150.0, imdbRating: 7.1, sacnilkStatus: "Verified", verdict: "Industry Hit" },
-    { title: "Rangasthalam", hero: "Ram Charan", director: "Sukumar", year: 2018, gross: 216.0, imdbRating: 8.2, sacnilkStatus: "Verified", verdict: "Blockbuster" },
-    { title: "Magadheera", hero: "Ram Charan", director: "S. S. Rajamouli", year: 2009, gross: 150.5, imdbRating: 7.7, sacnilkStatus: "Verified", verdict: "Industry Hit" },
-    { title: "Aravinda Sametha", hero: "Jr NTR", director: "Trivikram Srinivas", year: 2018, gross: 190.0, imdbRating: 7.5, sacnilkStatus: "Verified", verdict: "Super Hit" },
-    { title: "Janatha Garage", hero: "Jr NTR", director: "Koratala Siva", year: 2016, gross: 135.0, imdbRating: 7.2, sacnilkStatus: "Verified", verdict: "Blockbuster" },
-
-    // Venkatesh & Nagarjuna & Nani & Ravi Teja
-    { title: "F2: Fun and Frustration", hero: "Victory Venkatesh", director: "Anil Ravipudi", year: 2019, gross: 140.0, imdbRating: 6.2, sacnilkStatus: "Verified", verdict: "Blockbuster" },
-    { title: "Drushyam", hero: "Victory Venkatesh", director: "Sripriya", year: 2014, gross: 45.0, imdbRating: 8.2, sacnilkStatus: "Verified", verdict: "Super Hit" },
-    { title: "Soggade Chinni Nayana", hero: "King Nagarjuna", director: "Kalyan Krishna", year: 2016, gross: 75.0, imdbRating: 6.3, sacnilkStatus: "Verified", verdict: "Blockbuster" },
-    { title: "Manam", hero: "King Nagarjuna", director: "Vikram Kumar", year: 2014, gross: 62.0, imdbRating: 7.9, sacnilkStatus: "Verified", verdict: "All-Time Classic" },
-    { title: "Dasara", hero: "Natural Star Nani", director: "Srikanth Odela", year: 2023, gross: 118.5, imdbRating: 6.7, sacnilkStatus: "Verified", verdict: "Blockbuster" },
-    { title: "Saripodhaa Sanivaram", hero: "Natural Star Nani", director: "Vivek Athreya", year: 2024, gross: 100.0, imdbRating: 7.3, sacnilkStatus: "Verified", verdict: "Super Hit" },
-    { title: "Eega", hero: "Natural Star Nani", director: "S. S. Rajamouli", year: 2012, gross: 125.0, imdbRating: 7.7, sacnilkStatus: "Verified", verdict: "Blockbuster" },
-    { title: "Dhamaka", hero: "Mass Maharaja Ravi Teja", director: "Trinadha Rao Nakkina", year: 2022, gross: 108.0, imdbRating: 6.1, sacnilkStatus: "Verified", verdict: "Blockbuster" },
-    { title: "Geetha Govindam", hero: "Vijay Deverakonda", director: "Parasuram", year: 2018, gross: 132.0, imdbRating: 7.7, sacnilkStatus: "Verified", verdict: "All-Time Blockbuster" }
+    { title: "Baahubali 2: The Conclusion", hero: "Prabhas", director: "S. S. Rajamouli", year: 2017, gross: 1810.6, imdbRating: 8.2, verdict: "Industry Hit" },
+    { title: "Pushpa 2: The Rule", hero: "Allu Arjun", director: "Sukumar", year: 2024, gross: 1742.1, imdbRating: 8.0, verdict: "All-Time Blockbuster" },
+    { title: "RRR", hero: "Ram Charan", director: "S. S. Rajamouli", year: 2022, gross: 1387.0, imdbRating: 7.8, verdict: "Industry Hit" },
+    { title: "Kalki 2898 AD", hero: "Prabhas", director: "Nag Ashwin", year: 2024, gross: 1042.2, imdbRating: 7.6, verdict: "All-Time Blockbuster" },
+    { title: "Salaar: Part 1 - Ceasefire", hero: "Prabhas", director: "Prashanth Neel", year: 2023, gross: 715.0, imdbRating: 6.6, verdict: "Blockbuster" },
+    { title: "Baahubali: The Beginning", hero: "Prabhas", director: "S. S. Rajamouli", year: 2015, gross: 650.0, imdbRating: 8.0, verdict: "Industry Hit" },
+    { title: "Devara: Part 1", hero: "Jr NTR", director: "Koratala Siva", year: 2024, gross: 521.0, imdbRating: 6.4, verdict: "Blockbuster" },
+    { title: "Pushpa: The Rise", hero: "Allu Arjun", director: "Sukumar", year: 2021, gross: 393.5, imdbRating: 7.6, verdict: "Blockbuster" },
+    { title: "Sarileru Neekevvaru", hero: "Superstar Mahesh Babu", director: "Anil Ravipudi", year: 2020, gross: 260.0, imdbRating: 6.1, verdict: "Blockbuster" },
+    { title: "Waltair Veerayya", hero: "Megastar Chiranjeevi", director: "K. S. Ravindra", year: 2023, gross: 236.1, imdbRating: 6.2, verdict: "Blockbuster" },
+    { title: "Guntur Kaaram", hero: "Superstar Mahesh Babu", director: "Trivikram Srinivas", year: 2024, gross: 231.0, imdbRating: 5.8, verdict: "Hit" },
+    { title: "Srimanthudu", hero: "Superstar Mahesh Babu", director: "Koratala Siva", year: 2015, gross: 200.0, imdbRating: 7.5, verdict: "Industry Hit" },
+    { title: "Attarintiki Daredi", hero: "Power Star Pawan Kalyan", director: "Trivikram Srinivas", year: 2013, gross: 187.0, imdbRating: 7.3, verdict: "Industry Hit" },
+    { title: "Khaidi No. 150", hero: "Megastar Chiranjeevi", director: "V. V. Vinayak", year: 2017, gross: 164.0, imdbRating: 6.1, verdict: "Blockbuster" },
+    { title: "Akhanda", hero: "Nandamuri Balakrishna", director: "Boyapati Srinu", year: 2021, gross: 151.0, imdbRating: 7.0, verdict: "Blockbuster" },
+    { title: "Magadheera", hero: "Ram Charan", director: "S. S. Rajamouli", year: 2009, gross: 150.5, imdbRating: 7.7, verdict: "Industry Hit" },
+    { title: "F2: Fun and Frustration", hero: "Victory Venkatesh", director: "Anil Ravipudi", year: 2019, gross: 140.0, imdbRating: 6.2, verdict: "Blockbuster" },
+    { title: "Dasara", hero: "Natural Star Nani", director: "Srikanth Odela", year: 2023, gross: 118.5, imdbRating: 6.7, verdict: "Blockbuster" },
+    { title: "Soggade Chinni Nayana", hero: "King Nagarjuna", director: "Kalyan Krishna", year: 2016, gross: 75.0, imdbRating: 6.3, verdict: "Blockbuster" },
+    { title: "Manam", hero: "King Nagarjuna", director: "Vikram Kumar", year: 2014, gross: 62.0, imdbRating: 7.9, verdict: "All-Time Classic" },
+    { title: "Indra", hero: "Megastar Chiranjeevi", director: "B. Gopal", year: 2002, gross: 55.0, imdbRating: 7.4, verdict: "Industry Hit" },
+    { title: "Narasimha Naidu", hero: "Nandamuri Balakrishna", director: "B. Gopal", year: 2001, gross: 30.0, imdbRating: 7.1, verdict: "Industry Hit" }
   ]
 };
