@@ -3,71 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TFI Cinematic Archives | Tollywood Superstars & Movies</title>
+  <title>TFI Cinematic Archives 2.0 | Complete Tollywood Database</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-  <!-- Animated Intro Splash Screen -->
-  <div id="intro-splash" class="splash-screen">
-    <div class="splash-content">
-      <div class="glow-orb"></div>
-      <span class="badge-gold"><i class="fa-solid fa-film"></i> TELUGU CINEMA ARCHIVES</span>
-      <h1 class="splash-title">TFI SUPERSTARS & BOX OFFICE</h1>
-      <p class="splash-subtitle">Explore Box Office History, Hero Profiles, Directors & Worldwide Collections</p>
-      <button id="enter-btn" class="glow-btn"><i class="fa-solid fa-play"></i> ENTER ARCHIVE</button>
-    </div>
+  <!-- Top Announcement Bar -->
+  <div class="top-banner">
+    <span><i class="fa-solid fa-fire text-gold"></i> <strong>TFI ARCHIVES 2.0:</strong> Sacnilk & IMDb Verified Collections + Wikipedia Biographies Included</span>
   </div>
 
-  <!-- Main Header Navigation -->
+  <!-- Header Navigation -->
   <header class="app-header">
     <div class="header-container">
       <div class="brand">
-        <i class="fa-solid fa-clapperboard brand-icon"></i>
+        <i class="fa-solid fa-film brand-icon"></i>
         <div>
-          <h2>TFI ARCHIVES</h2>
-          <span class="brand-sub">Tollywood Cinema Intelligence</span>
+          <h2>TFI ARCHIVES 2.0</h2>
+          <span class="brand-sub">Tollywood Superstars, Bios & Box Office</span>
         </div>
       </div>
-      <nav class="nav-links">
-        <a href="#heroes-section"><i class="fa-solid fa-user-ninja"></i> Heroes</a>
-        <a href="#movies-section"><i class="fa-solid fa-table"></i> Movies Database</a>
-        <a href="#compare-section"><i class="fa-solid fa-code-compare"></i> Battle Matrix</a>
+      
+      <!-- Multi-Tab Mode Switcher -->
+      <nav class="nav-tabs">
+        <button class="tab-btn active" data-tab="tab-heroes"><i class="fa-solid fa-id-card"></i> Profiles & Bios</button>
+        <button class="tab-btn" data-tab="tab-movies"><i class="fa-solid fa-chart-line"></i> Sacnilk & IMDb Database</button>
+        <button class="tab-btn" data-tab="tab-compare"><i class="fa-solid fa-swords"></i> Battle Matrix</button>
       </nav>
     </div>
   </header>
 
   <main class="main-content">
-    
-    <!-- Hero Superstars Showcase Block -->
-    <section id="heroes-section" class="section-container">
+
+    <!-- ================= TAB 1: HERO PROFILES & WIKIPEDIA BIOS ================= -->
+    <section id="tab-heroes" class="tab-content active">
       <div class="section-header">
-        <h2><i class="fa-solid fa-crown text-gold"></i> Tollywood Superstars</h2>
-        <p>Click on any hero profile to view top movies, career stats, and grossing records.</p>
+        <h2><i class="fa-solid fa-crown text-gold"></i> TFI Superstars (Pioneers to Modern Stars)</h2>
+        <p>Complete details including Date of Birth (DOB), Birthplace, Dynasty, and Wikipedia Biography.</p>
       </div>
-      <div id="heroes-grid" class="heroes-grid">
-        <!-- Dynamic Hero Cards Rendered via JavaScript -->
+
+      <!-- Filter Controls for Hero Profiles -->
+      <div class="controls-card">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="hero-search" placeholder="Search hero name, real name, or birthplace..." />
+        </div>
+        <div class="filter-group">
+          <select id="era-filter">
+            <option value="ALL">All Cinema Eras</option>
+            <option value="Pioneer Era (1940s-1970s)">Pioneer Era (1940s-1970s)</option>
+            <option value="Golden Era (1980s-1990s)">Golden Era (1980s-1990s)</option>
+            <option value="Pan-India & Modern Era (2000s-Present)">Pan-India & Modern Era (2000s-Present)</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="heroes-cards-grid" class="heroes-cards-grid">
+        <!-- Injected via app.js -->
       </div>
     </section>
 
-    <!-- Master Movie Database Table & Filter Control Block -->
-    <section id="movies-section" class="section-container">
+    <!-- ================= TAB 2: SACNILK & IMDB MOVIES DATABASE ================= -->
+    <section id="tab-movies" class="tab-content">
       <div class="section-header">
-        <h2><i class="fa-solid fa-film text-gold"></i> Master Filmography & Collections</h2>
-        <p>Search, filter, and sort movies by release year, director, worldwide gross, and verdict.</p>
+        <h2><i class="fa-solid fa-database text-gold"></i> Box Office & Filmography Database</h2>
+        <p>Worldwide Gross figures benchmarked against <strong>Sacnilk Box Office Tracker</strong> and <strong>IMDb Ratings</strong>.</p>
       </div>
 
       <!-- Controls Toolbar -->
       <div class="controls-card">
         <div class="search-box">
           <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" id="search-input" placeholder="Search by movie title or director..." />
+          <input type="text" id="movie-search" placeholder="Search by title, hero, or director..." />
         </div>
         <div class="filter-group">
-          <select id="hero-filter">
-            <option value="ALL">All Heroes</option>
+          <select id="movie-hero-filter">
+            <option value="ALL">All Superstars</option>
           </select>
           <select id="verdict-filter">
             <option value="ALL">All Verdicts</option>
@@ -80,31 +93,32 @@
         </div>
       </div>
 
-      <!-- Data Table -->
+      <!-- Table View -->
       <div class="table-responsive">
         <table class="data-table">
           <thead>
             <tr>
               <th data-sort="title">Movie Title <i class="fa-solid fa-sort"></i></th>
-              <th data-sort="hero">Hero <i class="fa-solid fa-sort"></i></th>
+              <th data-sort="hero">Hero Star <i class="fa-solid fa-sort"></i></th>
               <th data-sort="director">Director <i class="fa-solid fa-sort"></i></th>
               <th data-sort="year">Year <i class="fa-solid fa-sort"></i></th>
-              <th data-sort="gross">Worldwide Gross (₹ Cr) <i class="fa-solid fa-sort"></i></th>
-              <th data-sort="verdict">Box Office Verdict <i class="fa-solid fa-sort"></i></th>
+              <th data-sort="imdbRating">IMDb Rating <i class="fa-solid fa-sort"></i></th>
+              <th data-sort="gross">Sacnilk Gross (₹ Cr) <i class="fa-solid fa-sort"></i></th>
+              <th data-sort="verdict">Verdict <i class="fa-solid fa-sort"></i></th>
             </tr>
           </thead>
           <tbody id="movies-tbody">
-            <!-- Dynamic Table Rows Rendered via JavaScript -->
+            <!-- Dynamic Rows Injected JS -->
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- Head-to-Head Comparison Battle Matrix -->
-    <section id="compare-section" class="section-container">
+    <!-- ================= TAB 3: BATTLE MATRIX ================= -->
+    <section id="tab-compare" class="tab-content">
       <div class="section-header">
-        <h2><i class="fa-solid fa-shield-halved text-gold"></i> Head-to-Head Hero Comparison</h2>
-        <p>Select two heroes to compare career numbers and top box office achievements side-by-side.</p>
+        <h2><i class="fa-solid fa-shield-halved text-gold"></i> Side-by-Side Hero Battle Matrix</h2>
+        <p>Compare career total gross, single highest film revenue, and bio parameters side-by-side.</p>
       </div>
 
       <div class="compare-selector-bar">
@@ -114,17 +128,18 @@
       </div>
 
       <div id="compare-grid" class="compare-grid">
-        <!-- Rendered Side-by-Side Comparison Matrix -->
+        <!-- Rendered dynamically -->
       </div>
     </section>
+
   </main>
 
-  <!-- Modal Popup for Hero Details -->
-  <div id="hero-modal" class="modal-overlay">
+  <!-- Expanded Modal Popup for DOB & Detailed Biography -->
+  <div id="bio-modal" class="modal-overlay">
     <div class="modal-card">
       <button id="modal-close" class="modal-close-btn">&times;</button>
       <div id="modal-body">
-        <!-- Dynamic Content injected via JS -->
+        <!-- Dynamically filled with Hero DOB, Family, Bio, and Sacnilk Movies -->
       </div>
     </div>
   </div>
